@@ -1,0 +1,63 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: black;
+}
+
+
+
+#topimg{
+    width: 1350px;
+    filter: brightness(0.4);
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#container{
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+#title{
+    color: white;
+    font-size: 65px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+#subtitle{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+#learnmore{
+    color: whitesmoke;
+}
+
+#learnmore:hover{
+    color: orange;
+    transition: 0.5s;
+}
+
+#text{
+    color: white;
+    font-size: 100px;
+}
+
+#uploads{
+    color: white;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
