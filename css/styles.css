@@ -3,10 +3,8 @@ body{
     background-color: black;
 }
 
-
-
 #topimg{
-    width: 1350px;
+    width: 1320px;
     filter: brightness(0.4);
     padding: 0;
     margin: 0;
@@ -34,7 +32,7 @@ body{
     color: white;
     font-size: 30px;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -54,10 +52,82 @@ body{
     font-size: 100px;
 }
 
-#uploads{
+.section{
     color: white;
     font-size: 50px;
     padding-left: 50px;
     padding-top: 30px;
     text-align: center;
+}
+
+#listen{
+    padding: 30px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+}
+
+.emptycont{
+    color: white;
+    margin-left: 100px;
+    margin-right: 50px;
+
+}
+
+.nameofsong{
+    font-size: 30px;
+    margin-left: 40px;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.duration{
+    font-size: 30px;
+    float: right;
+    margin-right: 50px;
+    color: grey;
+}
+
+.listenbtn{
+    color: white;
+    float: right;
+    font-size: 22px;
+    padding: 4px;
+    background-color: orange;
+    -webkit-user-select: none;
+    margin-right: 20px;
+    
+}
+
+.listenbtn:hover{
+    color: white;
+    background-color: #ff7b00;
+    transition: 0.5s;
+}
+
+.downloadbtn{
+    color: white;
+    float: right;
+    font-size: 22px;
+    padding: 4px;
+    background-color: orange;
+    -webkit-user-select: none;
+    margin-right: 100px;
+    margin-top: 0;
+}
+
+.downloadbtn:hover{
+    color: white;
+    background-color: #ff7b00;
+    transition: 0.5s;
+
+}
+
+.section{
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 90px;
+    text-decoration: underline;
+    color: orange;
 }
