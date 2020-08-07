@@ -72,6 +72,7 @@ function playAudio3(){
     }
 }
 
+//this is weird
 document.getElementsByClassName('listenbtn')[0].addEventListener('click', playAudio1);
 document.getElementsByClassName('listenbtn')[1].addEventListener('click', playAudio2);
 document.getElementsByClassName('listenbtn')[2].addEventListener('click', playAudio3);
