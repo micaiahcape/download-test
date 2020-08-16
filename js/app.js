@@ -1,4 +1,4 @@
-var allsongs = [{title: 'Prelude in G', duration: '2:34', audio: 'https://easymath.github.io/download-test/PreludeinG.mp3'}, {title: 'Prelude in C', duration: '2:46', audio: 'https://easymath.github.io/download-test/Prelude_in_C.mp3'}, {title: 'Let\'s Party! (Roaring 20s)', duration: '3:15', audio: 'https://easymath.github.io/download-test/Let\'s_Party!_(Roaring_20\'s).mp3'}]
+var allsongs = [{title: 'Prelude in G', duration: '2:34', audio: 'https://easymath.github.io/download-test/PreludeinG.mp3', web: '/prelude-in-g'}, {title: 'Prelude in C', duration: '2:46', audio: 'https://easymath.github.io/download-test/Prelude_in_C.mp3', web: '/prelude-in-c'}, {title: 'Let\'s Party! (Roaring 20s)', duration: '3:15', audio: 'https://easymath.github.io/download-test/Let\'s_Party!_(Roaring_20\'s).mp3', web: '/lets-party-roaring-20s'}]
 
 for (i = 0; i < 3; i++){
     var audiofile = document.createElement('audio');
@@ -22,16 +22,22 @@ for (i = 0; i < 3; i++){
 }
 
 for (i = 0; i < 3; i++){
-    var download = document.createElement('span');
+    var download = document.createElement('A');
     download.className = 'downloadbtn'
-    download.innerHTML = 'Download →';
+    var innerlink = document.createTextNode('View & Download →')
+    download.setAttribute('href', allsongs[i].web);
+    download.setAttribute('target', '_blank')
+    download.appendChild(innerlink);
     document.getElementsByClassName('nameofsong')[i].appendChild(download);
 }
 
 for (i = 0; i < 3; i++){
-    var listen = document.createElement('span');
+    var listen = document.createElement('A');
     listen.className = 'listenbtn'
-    listen.innerHTML = ' ▶  Play';
+    var innerlink = document.createTextNode('Listen');
+    listen.setAttribute('href', allsongs[i].audio);
+    listen.setAttribute('target', '_blank')
+    listen.appendChild(innerlink);
     document.getElementsByClassName('nameofsong')[i].appendChild(listen);
 }
 
@@ -42,39 +48,6 @@ for (i = 0; i < 3; i++){
     document.getElementsByClassName('nameofsong')[i].appendChild(duration);
 }
 
-function playAudio1(){
-    if(document.getElementsByClassName('listenbtn')[0].innerHTML === ' ▶  Play'){
-        document.getElementsByClassName('listenbtn')[0].innerHTML = '|| Pause';
-        document.getElementsByClassName('listen')[1].play();
-    }else{
-        document.getElementsByClassName('listenbtn')[0].innerHTML = ' ▶  Play';
-        document.getElementsByClassName('listen')[1].pause();
-    }
-}
 
-function playAudio2(){
-    if(document.getElementsByClassName('listenbtn')[1].innerHTML === ' ▶  Play'){
-        document.getElementsByClassName('listenbtn')[1].innerHTML = '|| Pause';
-        document.getElementsByClassName('listen')[2].play();
-    }else{
-        document.getElementsByClassName('listenbtn')[1].innerHTML = ' ▶  Play';
-        document.getElementsByClassName('listen')[2].pause();
-    }
-}
-
-function playAudio3(){
-    if(document.getElementsByClassName('listenbtn')[2].innerHTML === ' ▶  Play'){
-        document.getElementsByClassName('listenbtn')[2].innerHTML = '|| Pause';
-        document.getElementsByClassName('listen')[3].play();
-    }else{
-        document.getElementsByClassName('listenbtn')[2].innerHTML = ' ▶  Play';
-        document.getElementsByClassName('listen')[3].pause();
-    }
-}
-
-//this is weird
-document.getElementsByClassName('listenbtn')[0].addEventListener('click', playAudio1);
-document.getElementsByClassName('listenbtn')[1].addEventListener('click', playAudio2);
-document.getElementsByClassName('listenbtn')[2].addEventListener('click', playAudio3);
 
 

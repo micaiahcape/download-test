@@ -92,36 +92,38 @@ body{
 .listenbtn{
     color: white;
     float: right;
-    font-size: 22px;
-    padding: 4px;
-    background-color: orange;
+    font-size: 25px;
+    padding: 7px;
+    background-color: darkorange;
     -webkit-user-select: none;
     margin-right: 20px;
-    
+    text-decoration: none;
 }
 
 .listenbtn:hover{
     color: white;
     background-color: #ff7b00;
     transition: 0.5s;
+    border-radius: 15px;
 }
 
 .downloadbtn{
     color: white;
     float: right;
-    font-size: 22px;
-    padding: 4px;
-    background-color: orange;
+    font-size: 25px;
+    padding: 7px;
+    background-color: darkorange;
     -webkit-user-select: none;
     margin-right: 100px;
     margin-top: 0;
+    text-decoration: none;
 }
 
 .downloadbtn:hover{
     color: white;
     background-color: #ff7b00;
     transition: 0.5s;
-
+    border-radius: 15px;
 }
 
 .section{
